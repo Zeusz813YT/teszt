@@ -85,6 +85,7 @@
     function spinWheel() {
       var wheel = document.getElementById('wheel');
       var randomDeg = Math.floor(Math.random() * 360) + 1800; // Random pörgetés
+      wheel.style.transition = 'transform 3s ease-out'; // Animáció
       wheel.style.transform = 'rotate(' + randomDeg + 'deg)';
     }
   </script>
